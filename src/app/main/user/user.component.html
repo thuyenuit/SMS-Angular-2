@@ -1,1 +1,321 @@
-<p>user works!</p>
+<!-- Bread crumb and right sidebar toggle -->
+<div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-12 d-flex no-block align-items-center">
+            <h4 class="page-title">Sản phẩm</h4>
+            <div class="ml-auto text-right">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bread crumb and right sidebar toggle -->
+
+<!-- Container fluid  -->
+<div class="container-fluid">
+    <!-- Start Page Content -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="header-card">
+                        <h5 class="card-title m-b-0">Tìm kiếm</h5>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="form-search">
+
+                            <div class="row col-md-12">
+                                <div class="col-md-3">
+                                    <input class="form-control col-md-12" placeholder="Nhập tên hoặc mã sản phẩm" name="keyword" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <select class="form-control col-md-12">
+                                        <option>--Thể loại--</option>
+                                        <option>Thể loại 1</option>
+                                        <option>Thể loại 2</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <select class="form-control col-md-12">
+                                        <option>--Trạng thái--</option>
+                                        <option>Đang kinh doanh</option>
+                                        <option>Ngừng kinh doanh</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-5 form-button">
+                                    <input type="button" value="Tìm kiếm" class="btn btn-info" />
+                                    <input type="button" value="Thêm" class="btn btn-info" />
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Excel</button>
+                                        <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 35px, 0px);">
+                                            <a class="dropdown-item" href="#">Nhập excel</a>
+                                            <a class="dropdown-item" href="#">Xuất excel</a>
+                                        </div>
+                                    </div>
+                                    <input type="button" value="Xóa" class="btn btn-danger" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Alias</th>
+                                <th scope="col">Mã sản phẩm</th>
+                                <th scope="col">Thể loại</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá nhập</th>
+                                <th scope="col">Giá bán</th>
+                                <th scope="col">Hình ảnh</th>
+                                <th scope="col">Trạng thái</th>
+                                <th>
+                                    <label class="customcheckbox m-b-20">
+                                        <input type="checkbox" id="mainCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="customtable">
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Sản phẩm 1</td>
+                                <td>san-pham-1</td>
+                                <td>SP0001</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">(Chưa có)</td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <th>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Sản phẩm 2</td>
+                                <td>san-pham-2</td>
+                                <td>SP0002</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img onclick="viewImages('~/assets/images/background/img6.jpg')" width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Sản phẩm 3</td>
+                                <td>san-pham-3</td>
+                                <td>SP0003</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img data-toggle="modal" data-target="#Modal3" width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td>Sản phẩm 4</td>
+                                <td>san-pham-4</td>
+                                <td>SP0004</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td>Sản phẩm 5</td>
+                                <td>san-pham-5</td>
+                                <td>SP0006</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td>Sản phẩm 6</td>
+                                <td>san-pham-6</td>
+                                <td>SP0006</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td>Sản phẩm 7</td>
+                                <td>san-pham-7</td>
+                                <td>SP0007</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">8</td>
+                                <td>Sản phẩm 8</td>
+                                <td>san-pham-8</td>
+                                <td>SP0008</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">9</td>
+                                <td>Sản phẩm 9</td>
+                                <td>san-pham-9</td>
+                                <td>SP0009</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">10</td>
+                                <td>Sản phẩm 10</td>
+                                <td>san-pham-10</td>
+                                <td>SP0010</td>
+                                <td>Thể loại 1</td>
+                                <td class="text-center">50</td>
+                                <td>15.000.000</td>
+                                <td>17.000.000</td>
+                                <td class="text-center">
+                                    <img width="32px" style="border-radius: 50%" src="~/assets/images/background/img4.jpg" />
+                                </td>
+                                <td><span class="badge badge-success">Đang kinh doanh</span></td>
+                                <td>
+                                    <label class="customcheckbox">
+                                        <input type="checkbox" class="listCheckbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End PAge Content -->
+</div>
+<!-- End Container fluid  -->
+
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Image Header</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="../../assets/images/background/img5.jpg" width="100% ">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
